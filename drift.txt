@@ -1,0 +1,77 @@
+def janwork(request):
+    return HttpResponse("Janwork is working!")
+
+def febwork(request):
+    return HttpResponse("Febwork is also working, chill it out!")
+
+def marwork(request):
+    return HttpResponse("running smoothly!!!")
+
+def aprwork(request):
+    return HttpResponse("running smoothly!!!")
+
+def mawork(request):
+    return HttpResponse("running smoothly!!!")
+
+def junwork(request):
+    return HttpResponse("running smoothly!!!")
+
+def julwork(request):
+    return HttpResponse("running smoothly!!!")
+
+def augwork(request):
+    return HttpResponse("running smoothly!!!")
+
+def sepwork(request):
+    return HttpResponse("running smoothly!!!")
+
+def octwork(request):
+    return HttpResponse("running smoothly!!!")
+
+def novwork(request):
+    return HttpResponse("running smoothly!!!")
+
+def decwork(request):
+    return HttpResponse("running smoothly!!!")
+
+
+    path("january/", views.janwork),
+    path("february/", views.febwork),
+    path("march/", views.marwork),
+    path("april/", views.aprwork),
+    path("may/", views.mawork),
+    path("june/", views.junwork),
+    path("july/", views.julwork),
+    path("august/", views.augwork),
+    path("september/", views.sepwork),
+    path("october/", views.octwork),
+    path("november/", views.novwork),
+    path("december/", views.decwork),
+
+    month = month
+    if month == "january":
+        work = "Janwork is working!"
+    elif month == "february":
+        work = "february is working!"
+    elif month == "march":
+        work = "march is working!"
+    elif month == "april":
+        work == "running smoothly!"
+    elif month == "may":
+        work = "running smoothly!"
+    elif month == "june":
+        work = "running smoothly!"
+    elif month == "july":
+        work = "running smoothly!"
+    elif month == "august":
+        work = "running smoothly!"
+    elif month == "september":
+        work = "running smoothly!"
+    elif month == "october":
+        work = "running smoothly!"
+    elif month == "november":
+        work = "running smoothly!"
+    elif month == "december":
+        work = "running smoothly!"
+    else:
+        return HttpResponseNotFound("Wrong Url!!!!")
