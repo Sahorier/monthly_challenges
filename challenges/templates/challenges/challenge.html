@@ -6,7 +6,11 @@
 {% endblock  %}
 
 
+
 {% block content %}
+
+{% include "./includes/header.html" %}
+
     <h2>Your challenge for {{month_name|title}}</h2>
     {% if challenge is not None %}
     <b>{{challenge}}</b>

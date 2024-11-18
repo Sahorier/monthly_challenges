@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
+from django.http import Http404, HttpResponseNotFound, HttpResponseRedirect
 from django.urls import reverse
 from django.template.loader import render_to_string
 
@@ -29,7 +29,7 @@ def monworkstr(request, month):
         })
         
     except:
-        return HttpResponseNotFound("Month not found!")
+        raise Http404()
     
 
 def monworkint(request, month):
@@ -39,7 +39,7 @@ def monworkint(request, month):
         redirect_path = reverse("int_month", args=[redirect_month])
         return HttpResponseRedirect(redirect_path)
     else:
-        return HttpResponseNotFound("Invalid Month")
+        raise Http404()
     
 # def months(request):
 #     month_response = ""
