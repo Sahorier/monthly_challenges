@@ -3,3 +3,8 @@
 html{
     font-family: "Geist Mono", monospace;
 }
+
+body {
+    margin: 0;
+    background-color: #1e1e1e;
+}

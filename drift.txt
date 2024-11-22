@@ -75,3 +75,8 @@ def decwork(request):
         work = "running smoothly!"
     else:
         return HttpResponseNotFound("Wrong Url!!!!")
+
+    {% block static_css %}
+    <link rel="stylesheet" href=" {% static "challenges/challenges.css" %} ">
+    <link rel="stylesheet" href=" {% static "challenges/includes/header.css" %} ">
+{% endblock %}
